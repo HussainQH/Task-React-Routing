@@ -1,3 +1,4 @@
+import NavBar from "./NavBar";
 
 const Home = (props) => {
   return (
