@@ -1,5 +1,3 @@
-import NavBar from "./NavBar";
-
 const Home = (props) => {
   return (
     <div className="home">

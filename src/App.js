@@ -2,10 +2,11 @@ import Home from "./components/Home";
 // Components
 import ProductList from "./components/ProductList";
 import NavBar from "./components/NavBar";
+
 //styling
 import "./App.css";
 import Detail from "./components/Detail";
-import { Route, Switch } from "react-router";
+import { Route, Switch, Redirect } from "react-router";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route exact path="/ProductList">
           <ProductList />
         </Route>
-        <Route exact path="/Detail">
+        <Route exact path="/ProductList/:ProductSlug">
           <Detail />
         </Route>
         <Route exact path="/">
